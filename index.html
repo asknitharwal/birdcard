@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <form id="birdForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="species">Species:</label>
+        <input type="text" id="species" name="species" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+        
+        <label for="photo">Photo URL:</label>
+        <input type="url" id="photo" name="photo" required>
+        
+        <button id="btn">Add Bird</button>
+    </form>
+    
+    <div id="container"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
