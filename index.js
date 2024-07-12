@@ -60,6 +60,7 @@ function displayData() {
         edit.id = "edit";
         edit.addEventListener("click", () => {
             editData(item);
+            document.getElementById("form").scrollIntoView({behavior: 'smooth'});
         });
 
         let del = document.createElement("button");
